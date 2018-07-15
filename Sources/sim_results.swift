@@ -1,17 +1,29 @@
-struct BoundSortedCollection<E>: Collection {
-
-    let limit: Int
+struct SimulationResults: Collection {
+    let limit = RESULTS_LIMIT
 
     typealias Comparator = (Element, Element) -> Bool
 
-    let areEqual: Comparator
-    let areInIncreasingOrder: Comparator
+    let areEqual: Comparator = { $0.gold == $1.gold }
+    let areInIncreasingOrder: Comparator = { $0.gold < $1.gold }
 
-    init(limit: Int, areEqual: @escaping Comparator, areInIncreasingOrder: @escaping Comparator) {
-        self.limit = limit
+    init() {
+    }
 
-        self.areEqual = areEqual
-        self.areInIncreasingOrder = areInIncreasingOrder
+    init(_ arrayOfResults: [SimulationResults]) {
+        for results in arrayOfResults {
+            array.append(contentsOf: results)
+        }
+        array.sort(by: areInIncreasingOrder)
+
+        if array.count >= limit {
+            let rarray: ArrayType = array.reversed()
+
+            let bottomElement = rarray[limit - 1]
+            let firstNotTiedAfterBottom = rarray[limit...].index(where: { !areEqual(bottomElement, $0) }) ?? rarray.endIndex
+
+            let removeCount = rarray.endIndex - firstNotTiedAfterBottom
+            array.removeFirst(removeCount)
+        }
     }
 
     mutating func insert(_ newElement: Element) {
@@ -38,7 +50,7 @@ struct BoundSortedCollection<E>: Collection {
 
     // MARK: - Backing array & Collection conformance
 
-    typealias ArrayType = [E]
+    typealias ArrayType = [SimulationState]
 
     private var array = ArrayType()
 
@@ -55,5 +67,4 @@ struct BoundSortedCollection<E>: Collection {
     func index(after i: ArrayType.Index) -> ArrayType.Index {
         return array.index(after: i)
     }
-
 }

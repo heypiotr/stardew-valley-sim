@@ -109,7 +109,7 @@ func generateSimulationBranches(parentState: SimulationState, callback: (Simulat
     }
 
     let postHarvestGold = parentState.gold + harvestedPlantations.value
-    let postHarvestAvailablePlots = maxPlots - remainingPlantations.amount
+    let postHarvestAvailablePlots = MAX_PLOTS - remainingPlantations.amount
 
     var foundAnyPlantingOption = false
     generatePlantingOptions(day: day,
