@@ -1,12 +1,4 @@
-class SimulationState: CustomStringConvertible, Comparable {
-    static func < (lhs: SimulationState, rhs: SimulationState) -> Bool {
-        return lhs.gold < rhs.gold
-    }
-
-    static func == (lhs: SimulationState, rhs: SimulationState) -> Bool {
-        return lhs.gold == rhs.gold
-    }
-
+class SimulationState: CustomStringConvertible {
     let parentState: SimulationState?
 
     let day: UInt

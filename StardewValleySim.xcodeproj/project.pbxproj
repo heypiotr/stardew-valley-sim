@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		363AB3A8FBE4A209A38B1D7C /* libPods-StardewValleySim.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB80FD0D53CE01084ABA468 /* libPods-StardewValleySim.a */; };
 		AE57AD4E20FA7F8A00CD8504 /* sim_state.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE57AD4A20FA7F8A00CD8504 /* sim_state.swift */; };
 		AE57AD4F20FA7F8A00CD8504 /* plantation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE57AD4B20FA7F8A00CD8504 /* plantation.swift */; };
 		AE57AD5020FA7F8A00CD8504 /* crops.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE57AD4C20FA7F8A00CD8504 /* crops.swift */; };
@@ -30,6 +31,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5FB80FD0D53CE01084ABA468 /* libPods-StardewValleySim.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StardewValleySim.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74655108BED4413E1CE05871 /* Pods-StardewValleySim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StardewValleySim.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StardewValleySim/Pods-StardewValleySim.debug.xcconfig"; sourceTree = "<group>"; };
+		8332D6C964F160EAA032FBBC /* Pods-StardewValleySim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StardewValleySim.release.xcconfig"; path = "Pods/Target Support Files/Pods-StardewValleySim/Pods-StardewValleySim.release.xcconfig"; sourceTree = "<group>"; };
 		AE57AD3F20FA7F6200CD8504 /* StardewValleySim */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StardewValleySim; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE57AD4A20FA7F8A00CD8504 /* sim_state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sim_state.swift; sourceTree = "<group>"; };
 		AE57AD4B20FA7F8A00CD8504 /* plantation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = plantation.swift; sourceTree = "<group>"; };
@@ -46,17 +50,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				363AB3A8FBE4A209A38B1D7C /* libPods-StardewValleySim.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A442779A2E86551ECD20EF0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74655108BED4413E1CE05871 /* Pods-StardewValleySim.debug.xcconfig */,
+				8332D6C964F160EAA032FBBC /* Pods-StardewValleySim.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AE57AD3620FA7F6200CD8504 = {
 			isa = PBXGroup;
 			children = (
 				AE57AD4920FA7F8A00CD8504 /* Sources */,
 				AE57AD4020FA7F6200CD8504 /* Products */,
+				A442779A2E86551ECD20EF0C /* Pods */,
+				E6C8F30CE71E4C7F30CD0A6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +99,14 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		E6C8F30CE71E4C7F30CD0A6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FB80FD0D53CE01084ABA468 /* libPods-StardewValleySim.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -90,6 +114,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE57AD4620FA7F6200CD8504 /* Build configuration list for PBXNativeTarget "StardewValleySim" */;
 			buildPhases = (
+				B91622986AD5743E2DBF1641 /* [CP] Check Pods Manifest.lock */,
 				AE57AD3B20FA7F6200CD8504 /* Sources */,
 				AE57AD3C20FA7F6200CD8504 /* Frameworks */,
 				AE57AD3D20FA7F6200CD8504 /* CopyFiles */,
@@ -134,6 +159,27 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B91622986AD5743E2DBF1641 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StardewValleySim-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE57AD3B20FA7F6200CD8504 /* Sources */ = {
@@ -269,7 +315,9 @@
 		};
 		AE57AD4720FA7F6200CD8504 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74655108BED4413E1CE05871 /* Pods-StardewValleySim.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54L3GGM4QP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -279,7 +327,9 @@
 		};
 		AE57AD4820FA7F6200CD8504 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8332D6C964F160EAA032FBBC /* Pods-StardewValleySim.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54L3GGM4QP;
 				PRODUCT_NAME = "$(TARGET_NAME)";

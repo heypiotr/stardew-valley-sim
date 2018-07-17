@@ -1,0 +1,6 @@
+module Pods_StardewValleySim {
+  umbrella header "Pods-StardewValleySim-umbrella.h"
+
+  export *
+  module * { export * }
+}

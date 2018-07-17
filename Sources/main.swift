@@ -24,7 +24,7 @@ let OPERATIONS_COUNT: Int = {
     if CommandLine.argc > 1, let value = Int(CommandLine.arguments[1]), value > 0 {
         return value
     } else {
-        return 1000
+        return 100
     }
 }()
 print("operationsCount = \(formatNumber(OPERATIONS_COUNT))")

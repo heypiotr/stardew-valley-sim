@@ -1,0 +1,6 @@
+module BTree {
+  umbrella header "BTree-umbrella.h"
+
+  export *
+  module * { export * }
+}

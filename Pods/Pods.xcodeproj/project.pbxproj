@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AD454EBEC1CC5BADFDE1D8990C5D524 /* BTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CC38A4A006FA4F9214D84DDD2A830 /* BTree.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0F9F8DD265161AEEB9A1E30DDF3F6D21 /* Pods-StardewValleySim-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4B4E77B287B7F9BA5F20139DB20BDF /* Pods-StardewValleySim-dummy.m */; };
+		14D617673D6CD18A595B9E78DB678A55 /* BTreeIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292016D8F5707F04C82432F80AC61072 /* BTreeIndex.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		23A0DBF588223B8107D6F6E9E5300332 /* SortedBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F293566A117184A85B6308DD875728BF /* SortedBag.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2994883FEFFC551D156DBD6BBFA08E89 /* Pods-StardewValleySim-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6792FC71ECB0D1B829854D5792AEBA /* Pods-StardewValleySim-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		38BFBAB5A5626DD01B021B15BFC34A02 /* BTreeComparisons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDC912D12BCDCF99C84EF65547DFF51 /* BTreeComparisons.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		39DB12ACBA80ED3A645408E41D7C58EA /* BTreeMerger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FABAD2C63E6749C3C16BB8E95770EBE /* BTreeMerger.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3CF09D95AA3F4A54B9C0C0550CB5A61D /* BTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DECF5F5A90A9C28B72BBAF73A879D5D /* BTreeNode.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4C18FA7F681964899ED3B97024B2EEC3 /* BTreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF85DF65A2A4A0E6135F40569827E7EC /* BTreeBuilder.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5DA93F4FDC8003C58A361A6F2E78BAE5 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3615CF10A8A9277DEE7F2FE276E1BB77 /* List.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		60B9A07711DA05F22CF89C57AE99217F /* BTree-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A536727A31324966C907CAB1C4322A2B /* BTree-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		78A14A1FA59BC3CDCA68B9F6D447BA58 /* BTreeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9251233F6BE2866F566B8ED91A0141D /* BTreeIterator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		824C3E3B63000CAF3400EF02AFD84ACA /* BTree-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E077B0C5778D7FB5AB7CC09A480E570F /* BTree-dummy.m */; };
+		A12DC8EE4FD3902206E420090E71677E /* BTreeCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC301D025AA3E71682F0145E42F5C6A /* BTreeCursor.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B52EB000D49BB0968A9C7C9CCBBE07C6 /* BTreePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3329E2430918A2F5D55A3A961A912889 /* BTreePath.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B8D643057B1A17CBE6AC67A8584600CD /* Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3A72B5807E4F6EEEF5A37778D6DC54 /* Compatibility.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C1E9B406CBD68115512FBF10A9FEB805 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCD9B59B7C110A22EFAD7FF79409B33 /* Weak.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CF8F37D6602D40169BAA82545E7C389F /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142988F4FCF5D871F26C682F4CF99ED /* Map.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E960FBB5DD40FCD6A9016D19DAF08A9A /* BridgedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D951733C0D2EA226057D28AA108B0A /* BridgedList.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EABAB7464EF38ADC6037C6544558FBC5 /* SortedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C92CDC277B527601944D554673A44A /* SortedSet.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56B8B42BE921D83B850E08CA809DDB30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69BCC1B6FA147A25BC78DCD8B8B5CF43;
+			remoteInfo = BTree;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BCE8B310F135C9B9877F100A0A005DC /* libBTree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBTree.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C9F510F17DC51F335E8F58F468DC407 /* Pods-StardewValleySim-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StardewValleySim-acknowledgements.plist"; sourceTree = "<group>"; };
+		292016D8F5707F04C82432F80AC61072 /* BTreeIndex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BTreeIndex.swift; path = Sources/BTreeIndex.swift; sourceTree = "<group>"; };
+		2DECF5F5A90A9C28B72BBAF73A879D5D /* BTreeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BTreeNode.swift; path = Sources/BTreeNode.swift; sourceTree = "<group>"; };
+		3329E2430918A2F5D55A3A961A912889 /* BTreePath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BTreePath.swift; path = Sources/BTreePath.swift; sourceTree = "<group>"; };
+		3615CF10A8A9277DEE7F2FE276E1BB77 /* List.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = List.swift; path = Sources/List.swift; sourceTree = "<group>"; };
+		3879AE5B925C883A3DF4D9AA1D6371A4 /* Pods-StardewValleySim.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StardewValleySim.modulemap"; sourceTree = "<group>"; };
+		3CAE699229648E3F22F684E29A5913A2 /* libPods-StardewValleySim.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StardewValleySim.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6967D054677B1F24312562BBA72365 /* Pods-StardewValleySim-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StardewValleySim-frameworks.sh"; sourceTree = "<group>"; };
+		4571B08883A8028058DC33CB50908CC0 /* BTree-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BTree-prefix.pch"; sourceTree = "<group>"; };
+		4FABAD2C63E6749C3C16BB8E95770EBE /* BTreeMerger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BTreeMerger.swift; path = Sources/BTreeMerger.swift; sourceTree = "<group>"; };
+		5392EC4FEAB201FF82FDFC3D9A3857CE /* Pods-StardewValleySim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StardewValleySim.release.xcconfig"; sourceTree = "<group>"; };
+		56C92CDC277B527601944D554673A44A /* SortedSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SortedSet.swift; path = Sources/SortedSet.swift; sourceTree = "<group>"; };
+		5A3A72B5807E4F6EEEF5A37778D6DC54 /* Compatibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compatibility.swift; path = Sources/Compatibility.swift; sourceTree = "<group>"; };
+		5A97825906249EF142E6553DA583D0D0 /* BTree.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = BTree.modulemap; path = ../../Headers/Public/BTree/BTree.modulemap; sourceTree = "<group>"; };
+		5CC301D025AA3E71682F0145E42F5C6A /* BTreeCursor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BTreeCursor.swift; path = Sources/BTreeCursor.swift; sourceTree = "<group>"; };
+		821F0A56668FB04B84863FB20D12105F /* BTree.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BTree.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A08402BDD071761BCDAED169C726AEDD /* Pods-StardewValleySim-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StardewValleySim-resources.sh"; sourceTree = "<group>"; };
+		A536727A31324966C907CAB1C4322A2B /* BTree-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "BTree-umbrella.h"; path = "../../Headers/Public/BTree/BTree-umbrella.h"; sourceTree = "<group>"; };
+		A9251233F6BE2866F566B8ED91A0141D /* BTreeIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BTreeIterator.swift; path = Sources/BTreeIterator.swift; sourceTree = "<group>"; };
+		BE4B4E77B287B7F9BA5F20139DB20BDF /* Pods-StardewValleySim-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StardewValleySim-dummy.m"; sourceTree = "<group>"; };
+		C3D951733C0D2EA226057D28AA108B0A /* BridgedList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BridgedList.swift; path = Sources/BridgedList.swift; sourceTree = "<group>"; };
+		CCCD9B59B7C110A22EFAD7FF79409B33 /* Weak.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Weak.swift; path = Sources/Weak.swift; sourceTree = "<group>"; };
+		D16CC38A4A006FA4F9214D84DDD2A830 /* BTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BTree.swift; path = Sources/BTree.swift; sourceTree = "<group>"; };
+		D1EA826BC508B20E2225BAE29047F938 /* Pods-StardewValleySim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StardewValleySim.debug.xcconfig"; sourceTree = "<group>"; };
+		DB6792FC71ECB0D1B829854D5792AEBA /* Pods-StardewValleySim-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StardewValleySim-umbrella.h"; sourceTree = "<group>"; };
+		E01DEC0A82C92FA0B901CC68AD3D2520 /* Pods-StardewValleySim-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StardewValleySim-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E077B0C5778D7FB5AB7CC09A480E570F /* BTree-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BTree-dummy.m"; sourceTree = "<group>"; };
+		EBDC912D12BCDCF99C84EF65547DFF51 /* BTreeComparisons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BTreeComparisons.swift; path = Sources/BTreeComparisons.swift; sourceTree = "<group>"; };
+		F142988F4FCF5D871F26C682F4CF99ED /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Sources/Map.swift; sourceTree = "<group>"; };
+		F293566A117184A85B6308DD875728BF /* SortedBag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SortedBag.swift; path = Sources/SortedBag.swift; sourceTree = "<group>"; };
+		FF85DF65A2A4A0E6135F40569827E7EC /* BTreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BTreeBuilder.swift; path = Sources/BTreeBuilder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		829B7C81EC1DF9D889DC03B1D3E08650 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9669DFA21558862CF338D35A9FE15818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		198098DD49E34C2D77AA56956226D658 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A97825906249EF142E6553DA583D0D0 /* BTree.modulemap */,
+				821F0A56668FB04B84863FB20D12105F /* BTree.xcconfig */,
+				E077B0C5778D7FB5AB7CC09A480E570F /* BTree-dummy.m */,
+				4571B08883A8028058DC33CB50908CC0 /* BTree-prefix.pch */,
+				A536727A31324966C907CAB1C4322A2B /* BTree-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BTree";
+			sourceTree = "<group>";
+		};
+		359F4BE774DCCA4E2B490070F068A51D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1ADD665F14C72DEA802A5B468FC0402 /* BTree */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3C33763572CF70C8F37B353089758853 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BCE8B310F135C9B9877F100A0A005DC /* libBTree.a */,
+				3CAE699229648E3F22F684E29A5913A2 /* libPods-StardewValleySim.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69BCC8009746E2F728DE30BCECB126A0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4044BAD8A1319E2ED653796F07FBD81 /* Pods-StardewValleySim */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				359F4BE774DCCA4E2B490070F068A51D /* Pods */,
+				3C33763572CF70C8F37B353089758853 /* Products */,
+				69BCC8009746E2F728DE30BCECB126A0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D1ADD665F14C72DEA802A5B468FC0402 /* BTree */ = {
+			isa = PBXGroup;
+			children = (
+				C3D951733C0D2EA226057D28AA108B0A /* BridgedList.swift */,
+				D16CC38A4A006FA4F9214D84DDD2A830 /* BTree.swift */,
+				FF85DF65A2A4A0E6135F40569827E7EC /* BTreeBuilder.swift */,
+				EBDC912D12BCDCF99C84EF65547DFF51 /* BTreeComparisons.swift */,
+				5CC301D025AA3E71682F0145E42F5C6A /* BTreeCursor.swift */,
+				292016D8F5707F04C82432F80AC61072 /* BTreeIndex.swift */,
+				A9251233F6BE2866F566B8ED91A0141D /* BTreeIterator.swift */,
+				4FABAD2C63E6749C3C16BB8E95770EBE /* BTreeMerger.swift */,
+				2DECF5F5A90A9C28B72BBAF73A879D5D /* BTreeNode.swift */,
+				3329E2430918A2F5D55A3A961A912889 /* BTreePath.swift */,
+				5A3A72B5807E4F6EEEF5A37778D6DC54 /* Compatibility.swift */,
+				3615CF10A8A9277DEE7F2FE276E1BB77 /* List.swift */,
+				F142988F4FCF5D871F26C682F4CF99ED /* Map.swift */,
+				F293566A117184A85B6308DD875728BF /* SortedBag.swift */,
+				56C92CDC277B527601944D554673A44A /* SortedSet.swift */,
+				CCCD9B59B7C110A22EFAD7FF79409B33 /* Weak.swift */,
+				198098DD49E34C2D77AA56956226D658 /* Support Files */,
+			);
+			path = BTree;
+			sourceTree = "<group>";
+		};
+		E4044BAD8A1319E2ED653796F07FBD81 /* Pods-StardewValleySim */ = {
+			isa = PBXGroup;
+			children = (
+				3879AE5B925C883A3DF4D9AA1D6371A4 /* Pods-StardewValleySim.modulemap */,
+				E01DEC0A82C92FA0B901CC68AD3D2520 /* Pods-StardewValleySim-acknowledgements.markdown */,
+				1C9F510F17DC51F335E8F58F468DC407 /* Pods-StardewValleySim-acknowledgements.plist */,
+				BE4B4E77B287B7F9BA5F20139DB20BDF /* Pods-StardewValleySim-dummy.m */,
+				3D6967D054677B1F24312562BBA72365 /* Pods-StardewValleySim-frameworks.sh */,
+				A08402BDD071761BCDAED169C726AEDD /* Pods-StardewValleySim-resources.sh */,
+				DB6792FC71ECB0D1B829854D5792AEBA /* Pods-StardewValleySim-umbrella.h */,
+				D1EA826BC508B20E2225BAE29047F938 /* Pods-StardewValleySim.debug.xcconfig */,
+				5392EC4FEAB201FF82FDFC3D9A3857CE /* Pods-StardewValleySim.release.xcconfig */,
+			);
+			name = "Pods-StardewValleySim";
+			path = "Target Support Files/Pods-StardewValleySim";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		05EAE2D3BDF210EFDFC26A6FCBE6C636 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B9A07711DA05F22CF89C57AE99217F /* BTree-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35BD28F21BFC4675E27AD899DCE6F386 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2994883FEFFC551D156DBD6BBFA08E89 /* Pods-StardewValleySim-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		69BCC1B6FA147A25BC78DCD8B8B5CF43 /* BTree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 489BD447A58BF5AECF010B89D3E67526 /* Build configuration list for PBXNativeTarget "BTree" */;
+			buildPhases = (
+				EFCA22FB6B848D7EF726140562B00C1A /* Sources */,
+				9669DFA21558862CF338D35A9FE15818 /* Frameworks */,
+				05EAE2D3BDF210EFDFC26A6FCBE6C636 /* Headers */,
+				E12107FF566661985FDF4860816F59E1 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTree;
+			productName = BTree;
+			productReference = 0BCE8B310F135C9B9877F100A0A005DC /* libBTree.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D0B5FD6E50749038DF760FD6CA915135 /* Pods-StardewValleySim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ACDEEADE0DA64826D4047BFAAE3FBD9 /* Build configuration list for PBXNativeTarget "Pods-StardewValleySim" */;
+			buildPhases = (
+				00769E7E72CFEBF0ED8142174B4E9E79 /* Sources */,
+				829B7C81EC1DF9D889DC03B1D3E08650 /* Frameworks */,
+				35BD28F21BFC4675E27AD899DCE6F386 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90DD0E4A18B29A475AD53896D04A7304 /* PBXTargetDependency */,
+			);
+			name = "Pods-StardewValleySim";
+			productName = "Pods-StardewValleySim";
+			productReference = 3CAE699229648E3F22F684E29A5913A2 /* libPods-StardewValleySim.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0940;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3C33763572CF70C8F37B353089758853 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69BCC1B6FA147A25BC78DCD8B8B5CF43 /* BTree */,
+				D0B5FD6E50749038DF760FD6CA915135 /* Pods-StardewValleySim */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E12107FF566661985FDF4860816F59E1 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/BTree/BTree.modulemap",
+				"${PODS_ROOT}/Headers/Public/BTree/BTree-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/BTree-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/BTree/BTree.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/BTree/BTree-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00769E7E72CFEBF0ED8142174B4E9E79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F9F8DD265161AEEB9A1E30DDF3F6D21 /* Pods-StardewValleySim-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCA22FB6B848D7EF726140562B00C1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E960FBB5DD40FCD6A9016D19DAF08A9A /* BridgedList.swift in Sources */,
+				824C3E3B63000CAF3400EF02AFD84ACA /* BTree-dummy.m in Sources */,
+				0AD454EBEC1CC5BADFDE1D8990C5D524 /* BTree.swift in Sources */,
+				4C18FA7F681964899ED3B97024B2EEC3 /* BTreeBuilder.swift in Sources */,
+				38BFBAB5A5626DD01B021B15BFC34A02 /* BTreeComparisons.swift in Sources */,
+				A12DC8EE4FD3902206E420090E71677E /* BTreeCursor.swift in Sources */,
+				14D617673D6CD18A595B9E78DB678A55 /* BTreeIndex.swift in Sources */,
+				78A14A1FA59BC3CDCA68B9F6D447BA58 /* BTreeIterator.swift in Sources */,
+				39DB12ACBA80ED3A645408E41D7C58EA /* BTreeMerger.swift in Sources */,
+				3CF09D95AA3F4A54B9C0C0550CB5A61D /* BTreeNode.swift in Sources */,
+				B52EB000D49BB0968A9C7C9CCBBE07C6 /* BTreePath.swift in Sources */,
+				B8D643057B1A17CBE6AC67A8584600CD /* Compatibility.swift in Sources */,
+				5DA93F4FDC8003C58A361A6F2E78BAE5 /* List.swift in Sources */,
+				CF8F37D6602D40169BAA82545E7C389F /* Map.swift in Sources */,
+				23A0DBF588223B8107D6F6E9E5300332 /* SortedBag.swift in Sources */,
+				EABAB7464EF38ADC6037C6544558FBC5 /* SortedSet.swift in Sources */,
+				C1E9B406CBD68115512FBF10A9FEB805 /* Weak.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90DD0E4A18B29A475AD53896D04A7304 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BTree;
+			target = 69BCC1B6FA147A25BC78DCD8B8B5CF43 /* BTree */;
+			targetProxy = 56B8B42BE921D83B850E08CA809DDB30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A5F8DAD670AE41A59B97379F984F767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1EA826BC508B20E2225BAE29047F938 /* Pods-StardewValleySim.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-StardewValleySim/Pods-StardewValleySim.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		697AEEEBF82A3E72EE4BE98F432E5218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 821F0A56668FB04B84863FB20D12105F /* BTree.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/BTree/BTree-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = Headers/Public/BTree/BTree.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = BTree;
+				PRODUCT_NAME = BTree;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		885072FBE917853E9C621EA32511C1DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		91AC084C0948677391B2F9FA93E8DD46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 821F0A56668FB04B84863FB20D12105F /* BTree.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/BTree/BTree-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = Headers/Public/BTree/BTree.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = BTree;
+				PRODUCT_NAME = BTree;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		C62CF84D77C62725F75865695B4D35B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5392EC4FEAB201FF82FDFC3D9A3857CE /* Pods-StardewValleySim.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-StardewValleySim/Pods-StardewValleySim.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		E574923E2959CFEF4FEBC7B272DBC6AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885072FBE917853E9C621EA32511C1DA /* Debug */,
+				E574923E2959CFEF4FEBC7B272DBC6AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		489BD447A58BF5AECF010B89D3E67526 /* Build configuration list for PBXNativeTarget "BTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				697AEEEBF82A3E72EE4BE98F432E5218 /* Debug */,
+				91AC084C0948677391B2F9FA93E8DD46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ACDEEADE0DA64826D4047BFAAE3FBD9 /* Build configuration list for PBXNativeTarget "Pods-StardewValleySim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A5F8DAD670AE41A59B97379F984F767 /* Debug */,
+				C62CF84D77C62725F75865695B4D35B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

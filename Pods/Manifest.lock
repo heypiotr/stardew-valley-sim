@@ -1,0 +1,16 @@
+PODS:
+  - BTree (4.1.0)
+
+DEPENDENCIES:
+  - BTree
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BTree
+
+SPEC CHECKSUMS:
+  BTree: 99b99930790b88dc5e8bafbf666a5dfb8d7808b4
+
+PODFILE CHECKSUM: f9fe81038fce15b11b3a1ee829f4803af64551e8
+
+COCOAPODS: 1.5.3

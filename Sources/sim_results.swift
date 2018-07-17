@@ -1,70 +1,60 @@
+import BTree
+
 struct SimulationResults: Collection {
     let limit = RESULTS_LIMIT
-
-    typealias Comparator = (Element, Element) -> Bool
-
-    let areEqual: Comparator = { $0.gold == $1.gold }
-    let areInIncreasingOrder: Comparator = { $0.gold < $1.gold }
 
     init() {
     }
 
     init(_ arrayOfResults: [SimulationResults]) {
         for results in arrayOfResults {
-            array.append(contentsOf: results)
-        }
-        array.sort(by: areInIncreasingOrder)
-
-        if array.count >= limit {
-            let rarray: ArrayType = array.reversed()
-
-            let bottomElement = rarray[limit - 1]
-            let firstNotTiedAfterBottom = rarray[limit...].index(where: { !areEqual(bottomElement, $0) }) ?? rarray.endIndex
-
-            let removeCount = rarray.endIndex - firstNotTiedAfterBottom
-            array.removeFirst(removeCount)
+            for result in results {
+                insert(result)
+            }
         }
     }
 
     mutating func insert(_ newElement: Element) {
-        if array.count < limit {
-            array.append(newElement)
-            array.sort(by: areInIncreasingOrder)
+        if backingCollection.count < limit {
+            backingCollection.insert(newElement)
         } else {
-            let bottomElement = array[0]
-            if (areEqual(bottomElement, newElement)) {
-                array.insert(newElement, at: 0)
-            } else if (areInIncreasingOrder(bottomElement, newElement)) {
-                array.append(newElement)
-                array.sort(by: areInIncreasingOrder)
-
-                let bottomTiesCount = array
-                    .index(where: { areInIncreasingOrder(bottomElement, $0) }) ?? array.endIndex
-
-                if (array.count - bottomTiesCount >= limit) {
-                    array.removeFirst(bottomTiesCount)
-                }
+            let bottomElement = backingCollection.first!
+            if (bottomElement == newElement) {
+                backingCollection.insert(newElement)
+            } else if (bottomElement < newElement) {
+                backingCollection.insert(newElement)
+                backingCollection.removeAll(bottomElement)
             }
         }
     }
 
     // MARK: - Backing array & Collection conformance
 
-    typealias ArrayType = [SimulationState]
+    typealias BackingType = SortedBag<SimulationState>
 
-    private var array = ArrayType()
+    private var backingCollection = BackingType()
 
-    typealias Index = ArrayType.Index
-    typealias Element = ArrayType.Element
+    typealias Index = BackingType.Index
+    typealias Element = BackingType.Element
 
-    var startIndex: Index { return array.startIndex }
-    var endIndex: Index { return array.endIndex }
+    var startIndex: Index { return backingCollection.startIndex }
+    var endIndex: Index { return backingCollection.endIndex }
 
-    subscript(index: Index) -> ArrayType.Element {
-        get { return array[index] }
+    subscript(index: Index) -> Element {
+        get { return backingCollection[index] }
     }
 
-    func index(after i: ArrayType.Index) -> ArrayType.Index {
-        return array.index(after: i)
+    func index(after i: Index) -> Index {
+        return backingCollection.index(after: i)
+    }
+}
+
+extension SimulationState: Comparable {
+    static func < (lhs: SimulationState, rhs: SimulationState) -> Bool {
+        return lhs.gold < rhs.gold
+    }
+
+    static func == (lhs: SimulationState, rhs: SimulationState) -> Bool {
+        return lhs.gold == rhs.gold
     }
 }
