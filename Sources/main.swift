@@ -16,6 +16,7 @@ let STARTING_STATE = SimulationState(parentState: nil,
                                      day: STARTING_DAY,
                                      plantations: STARTING_PLANTATIONS,
                                      gold: STARTING_GOLD,
+                                     plantedPlantations: STARTING_PLANTATIONS,
                                      nextDay: STARTING_DAY)
 
 let RESULTS_LIMIT = 1000
