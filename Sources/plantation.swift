@@ -85,7 +85,7 @@ extension Array where Element == Plantation {
 }
 
 func generatePlantingOptions(day: UInt, gold: UInt, plots: UInt, callback: ([Plantation]) -> Void) {
-    for primaryCrop in springCrops {
+    for primaryCrop in CROPS {
         if day + primaryCrop.growthDays > 28 { continue }
 
         let primarySeedsCount = min(gold / primaryCrop.seedPrice, plots)
@@ -99,7 +99,7 @@ func generatePlantingOptions(day: UInt, gold: UInt, plots: UInt, callback: ([Pla
         if primarySeedsCount == plots {
             let leftoverGold = gold - primarySeedsCount * primaryCrop.seedPrice
 
-            for secondaryCrop in springCrops {
+            for secondaryCrop in CROPS {
                 if day + secondaryCrop.growthDays > 28 { continue }
                 if secondaryCrop.seedPrice <= primaryCrop.seedPrice { continue }
 

@@ -32,3 +32,33 @@ let springCrops = [
 //    strawberry, // egg festival
     tulip,
 ]
+
+let blueberry   = Crop(name: "blueberry",   seedPrice: 80,      sellPrice: 50,  yield: 3,   growthDays: 13, regrowthDays: 4  )
+let corn        = Crop(name: "corn",        seedPrice: 150,     sellPrice: 50,  yield: 1,   growthDays: 14, regrowthDays: 4  )
+let hops        = Crop(name: "hops",        seedPrice: 60,      sellPrice: 25,  yield: 1,   growthDays: 11, regrowthDays: 1  )
+let hotPepper   = Crop(name: "hotPepper",   seedPrice: 40,      sellPrice: 40,  yield: 1,   growthDays: 5,  regrowthDays: 3  )
+let melon       = Crop(name: "melon",       seedPrice: 80,      sellPrice: 250, yield: 1,   growthDays: 12, regrowthDays: nil)
+let poppy       = Crop(name: "poppy",       seedPrice: 100,     sellPrice: 140, yield: 1,   growthDays: 7,  regrowthDays: nil)
+let radish      = Crop(name: "radish",      seedPrice: 40,      sellPrice: 90,  yield: 1,   growthDays: 6,  regrowthDays: nil)
+let redCabbage  = Crop(name: "redCabbage",  seedPrice: 100,     sellPrice: 260, yield: 1,   growthDays: 9,  regrowthDays: nil)
+let starfruit   = Crop(name: "starfruit",   seedPrice: 400,     sellPrice: 750, yield: 1,   growthDays: 13, regrowthDays: nil)
+let spangle     = Crop(name: "spangle",     seedPrice: 50,      sellPrice: 90,  yield: 1,   growthDays: 8,  regrowthDays: nil)
+let sunflower   = Crop(name: "sunflower",   seedPrice: 200,     sellPrice: 80,  yield: 1,   growthDays: 8,  regrowthDays: nil)
+let tomato      = Crop(name: "tomato",      seedPrice: 50,      sellPrice: 60,  yield: 1,   growthDays: 11, regrowthDays: 4  )
+let wheat       = Crop(name: "wheat",       seedPrice: 10,      sellPrice: 25,  yield: 1,   growthDays: 4,  regrowthDays: nil)
+
+let summerCrops = [
+    blueberry,
+    corn,
+    hops,
+    hotPepper,
+    melon,
+    poppy,
+    radish,
+//    redCabbage, // year 2+
+//    starfruit, // desert
+    spangle,
+//    sunflower, // negative
+    tomato,
+    wheat
+]
