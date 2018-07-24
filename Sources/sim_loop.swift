@@ -16,7 +16,7 @@ private class SimulationOperation: Operation {
             nextState = { [unowned self] in self.states.popLast() }
         case .breadthFirstStoppingAfter(let stopCount):
             nextState = { [unowned self] in
-                self.states.count >= stopCount ? nil : self.states.removeFirst()
+                self.states.count >= stopCount || self.states.isEmpty ? nil : self.states.removeFirst()
             }
         }
     }
@@ -39,14 +39,14 @@ private class SimulationOperation: Operation {
     }
 }
 
-func performSimulation() -> SimulationResults {
+func performSimulation(operationsCount: Int) -> SimulationResults {
     let startingOperation = SimulationOperation(startingStates: [STARTING_STATE],
-                                                processingType: .breadthFirstStoppingAfter(OPERATIONS_COUNT))
+                                                processingType: .breadthFirstStoppingAfter(operationsCount))
     startingOperation.main()
 
-    var startingStatesPerOperation = [[SimulationState]](repeating: [], count: OPERATIONS_COUNT)
+    var startingStatesPerOperation = [[SimulationState]](repeating: [], count: operationsCount)
     for (index, state) in startingOperation.states.enumerated() {
-        startingStatesPerOperation[index % OPERATIONS_COUNT].append(state)
+        startingStatesPerOperation[index % operationsCount].append(state)
     }
     let operations = startingStatesPerOperation.map { SimulationOperation(startingStates: $0,
                                                                           processingType: .depthFirst) }
